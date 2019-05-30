@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int main(void)
+{
+char str[]="I $am 5a$ go68od#@$ st-ude[nt].";
+char newstr[50];
+
+int i,j =0;
+int length=strlen(str);
+
+ for(i=0;i<length;i++)
+ {
+ 	if(isalpha(str[i])||isspace(str[i]))
+	 {
+ 		newstr[j]=str[i];
+ 		j++;
+ 	}
+ }
+
+ puts(newstr);
+system("PAUSE");
+return 0;	
+}
